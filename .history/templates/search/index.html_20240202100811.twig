@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SearchController!{% endblock %}
+
+{% block body %}
+<h1>Rechercher une entreprise</h1>
+{{ form(form) }}
+{% if results|length > 0 %}
+
+<h2>Résultat de la recherche</h2>
+{% for result in results %}
+
+    
+{% endfor %}
+
+{% endblock %}
